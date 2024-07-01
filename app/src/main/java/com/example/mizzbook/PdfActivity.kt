@@ -9,8 +9,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.mizzbook.databinding.ActivityPdfBinding
 
 class PdfActivity : AppCompatActivity() {
-    // Referensi ke activity saat ini
-    val activity = this
     // Referensi ke binding yang akan diinisialisasi nanti
     lateinit var binding: ActivityPdfBinding
     override fun onCreate(savedInstanceState: Bundle?) {
