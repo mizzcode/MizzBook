@@ -17,13 +17,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        // Akses elemen UI dengan binding.apply
         binding.apply {
             mRecyclerViewHome.adapter = adapter
-            list.add(BooksModel(R.drawable.cover_heker, "Judul Buku", "Deskripsi Buku", "contoh_buku.pdf"))
-            list.add(BooksModel(R.drawable.book_2, "Judul Buku", "Deskripsi Buku", "contoh_buku.pdf"))
+            list.add(BooksModel(R.drawable.cover_heker, "Buku Sakti Hacker", getString(R.string.description_buku_sakti_hengker), "Buku_Sakti_Hacker.pdf"))
+            list.add(BooksModel(R.drawable.book_2, "Atomic Habits", getString(R.string.description_atomic_habit), "Atomic_Habits_by_James_Clear.pdf"))
         }
+        // Aktifkan efek edge-to-edge (fit ke seluruh layar)
         enableEdgeToEdge()
-        setContentView(binding.root)
+        // Penanganan inset (area terhalang status bar/navigation bar)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
