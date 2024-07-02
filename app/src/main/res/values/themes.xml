@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MizzBook" parent="Theme.Material3.Light">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/dark_blue</item>
     </style>
 
     <style name="Theme.MizzBook" parent="Base.Theme.MizzBook" />
