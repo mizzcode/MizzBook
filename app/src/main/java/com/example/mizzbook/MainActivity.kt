@@ -20,8 +20,9 @@ class MainActivity : AppCompatActivity() {
         // Akses elemen UI dengan binding.apply
         binding.apply {
             mRecyclerViewHome.adapter = adapter
-            list.add(BooksModel(R.drawable.cover_heker, "Buku Sakti Hacker", getString(R.string.description_buku_sakti_hengker), "Buku_Sakti_Hacker.pdf"))
-            list.add(BooksModel(R.drawable.book_2, "Atomic Habits", getString(R.string.description_atomic_habit), "Atomic_Habits_by_James_Clear.pdf"))
+            list.add(BooksModel(R.drawable.one_piece_vol_01, "One Piece Volume 1", getString(R.string.description_buku_sakti_hengker), "one_piece_vol_01.pdf"))
+            list.add(BooksModel(R.drawable.one_piece_vol_02, "One Piece Volume 2", getString(R.string.description_atomic_habit), "one_piece_vol_02.pdf"))
+            list.add(BooksModel(R.drawable.one_piece_vol_03, "One Piece Volume 3", getString(R.string.description_atomic_habit), "one_piece_vol_03.pdf"))
         }
         // Aktifkan efek edge-to-edge (fit ke seluruh layar)
         enableEdgeToEdge()

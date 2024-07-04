@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.mizzbook.databinding.ActivityPdfBinding
+import com.github.barteksc.pdfviewer.util.FitPolicy
 
 class PdfActivity : AppCompatActivity() {
     // Referensi ke binding yang akan diinisialisasi nanti
@@ -31,6 +32,9 @@ class PdfActivity : AppCompatActivity() {
                 .pageSnap(true)
                 .autoSpacing(true)
                 .pageFling(true)
+                .fitEachPage(true)
+                .enableAntialiasing(true)
+                .pageFitPolicy(FitPolicy.WIDTH)
                 .load()
         }
         // Penanganan inset (area terhalang status bar/navigation bar)
