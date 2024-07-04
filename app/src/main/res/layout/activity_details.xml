@@ -43,7 +43,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5"
-                app:srcCompat="@drawable/book_2" />
+                app:srcCompat="@drawable/one_piece_vol_01" />
 
             <View
                 android:id="@+id/view"
@@ -67,7 +67,7 @@
         android:ellipsize="end"
         android:fontFamily="@font/roboto_bold"
         android:maxLines="1"
-        android:text="Atomic Habits"
+        android:text="One Piece Volume 1"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
         android:layout_marginBottom="8dp"
         android:ellipsize="end"
         android:fontFamily="@font/roboto"
-        android:text="@string/description_atomic_habit"
+        android:text="@string/description_wanpis_vol1"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnReadBook"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Baca Buku"
+        android:text="Baca Komik"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:icon="@drawable/ic_read"
