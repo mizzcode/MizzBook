@@ -2,6 +2,8 @@ package com.example.mizzbook
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,14 +19,20 @@ class DetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         // Aktifkan efek edge-to-edge (fit ke seluruh layar)
+        setContentView(binding.root)
         enableEdgeToEdge()
+
+        val toolbarTwo = findViewById<LinearLayout>(R.id.toolbar_two)
+        val leftIcon = toolbarTwo.findViewById<ImageView>(R.id.leftIcon)
+        leftIcon?.setOnClickListener {
+            finish()
+        }
         // Mendapatkan data buku yang dikirim dari BooksAdapter
         val bookTitle = intent.getStringExtra("book_title").toString()
         val bookDesc = intent.getStringExtra("book_desc").toString()
         val bookPDF = intent.getStringExtra("book_pdf").toString()
         val bookImage = intent.getIntExtra("book_image", 0)
         // Set content view menggunakan root element dari binding
-        setContentView(binding.root)
         // Akses elemen UI dengan binding.apply
         binding.apply {
             // Set judul buku ke TextView
