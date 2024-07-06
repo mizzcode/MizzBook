@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             list.add(BooksModel(R.drawable.one_piece_vol_01, "One Piece Volume 1", getString(R.string.description_wanpis_vol1), "one_piece_vol_01.pdf"))
             list.add(BooksModel(R.drawable.one_piece_vol_02, "One Piece Volume 2", getString(R.string.description_wanpis_vol2), "one_piece_vol_02.pdf"))
             list.add(BooksModel(R.drawable.one_piece_vol_03, "One Piece Volume 3", getString(R.string.description_wanpis_vol3), "one_piece_vol_03.pdf"))
+            list.add(BooksModel(R.drawable.luffy, "Misbahudin", getString(R.string.misbah), "cv_misbahudin.pdf"))
         }
         // Aktifkan efek edge-to-edge (fit ke seluruh layar)
         enableEdgeToEdge()
