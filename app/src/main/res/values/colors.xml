@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="dark_blue">#012233</color>
+    <color name="dark_blue">#001D50</color>
     <color name="purple_500">#673AB7</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="book_handle">#5E222222</color>
     <color name="gray">#F3F3F3</color>
+    <color name="gray2">#BEBEBE</color>
+    <color name="orange">#F97D4C</color>
 </resources>
