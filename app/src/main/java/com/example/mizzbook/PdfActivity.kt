@@ -26,12 +26,8 @@ class PdfActivity : AppCompatActivity() {
             val bookPDF = intent.getStringExtra("book_pdf").toString()
             // Memuat file PDF dari asset
             pdfView.fromAsset(bookPDF)
-                .swipeHorizontal(true)
+                .swipeHorizontal(false)
                 .enableSwipe(true)
-                .swipeHorizontal(true)
-                .pageSnap(true)
-                .autoSpacing(true)
-                .pageFling(true)
                 .fitEachPage(true)
                 .enableAntialiasing(true)
                 .pageFitPolicy(FitPolicy.WIDTH)
